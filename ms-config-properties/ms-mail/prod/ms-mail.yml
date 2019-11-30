@@ -1,8 +1,10 @@
 spring:
   kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      userCreated: USER_CREATED_TOPIC
     consumer:
       group-id: ms_mail_consumer
-    bootstrap-servers: localhost:9092
   h2:
     console:
       enabled: true
